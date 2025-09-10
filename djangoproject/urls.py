@@ -18,8 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),        # Django admin interface
-    path('api/admin/', include('users.urls')),  # Your API admin routes
-    path('api/users/', include('users.urls')),  # Your API user routes  
+    path('admin/', admin.site.urls),   
+    path('api/', include('users.urls')),
 ]
 

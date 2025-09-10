@@ -36,9 +36,6 @@ class RegisterUserSerializer(serializers.Serializer):
         return user
 
 class LoginSerializer(serializers.Serializer):
-    """
-    Serializer for user login with form-friendly field definitions.
-    """
     username = serializers.CharField(
         max_length=150,
         help_text="Enter your username"
